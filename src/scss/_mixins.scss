@@ -1,0 +1,113 @@
+
+// @mixin button {
+//     background-color: $pink;
+//     color: white;
+//     padding: 8px 12px;
+//     display: flex;
+//     border: none;
+//     border-radius: 16px;
+//     font-family: TTLakes-Medium, sans-serif;
+//     vertical-align: middle;
+//     text-transform: uppercase;
+//     text-align: right;
+
+//     span {
+//         padding-left: 10px;
+//         padding-right: 5px;
+//     }
+// }
+
+@mixin border($color) {
+    border-radius: 6px;
+    border: 1px solid $color;
+}
+
+@mixin  p-left {
+    padding-left: 2rem;
+}
+
+@mixin border-bottom {
+    border-bottom: 2px solid $lineColor;
+}
+
+@mixin serviseBlock {
+    width: 100%;
+    background-color: $bgColor;
+
+    button {
+        @include more;
+    }
+}
+
+@mixin more {
+    font-family: TTLakes-Medium, sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 8px;
+    outline: none;
+    padding-left: 2rem;
+
+    span {
+        margin-right: 1rem;
+    }
+}
+
+@mixin modal {    
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    display: none;
+    box-sizing: border-box;      
+}
+
+@mixin modal-form {
+    width: 440px;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 2rem;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+@mixin modal-heading {
+    font-size: 1.5rem;
+    font-family: TTLakes-bold, sans-serif;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+@mixin modal-input-wrapper {
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+}
+
+@mixin modal-input {
+    width: 100%;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+@mixin modal-text {
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-size: 14px;
+    line-height: 16px;
+    box-sizing: border-box;
+}
+
+@mixin modal-link {
+    color: $pink;
+    text-decoration: none;
+}

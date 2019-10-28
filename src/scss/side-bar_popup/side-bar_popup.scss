@@ -1,0 +1,71 @@
+.popup {
+    position: absolute;
+    width: 100%;
+    border-left: none;
+    margin-left: 0;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 1024px;
+    display: none;
+    z-index: 2;
+
+    .popup__wrapper {
+        padding-top: 1.5rem;
+        width: 320px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        box-sizing: border-box;
+        background-color: #fff;
+        box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+    }
+
+    .popup-header {
+        justify-content: flex-start;
+        padding-right: 1rem;
+    }
+
+    .popup__burger-button-wrapper {
+        display: block;
+    }
+
+    .popup__input {
+        top: 10%;
+        right: 20px;
+        z-index: 3;
+    }
+
+    .popup-menu__link.menu__link {
+        padding: 4px 1.5rem;
+    }
+
+    .popup-menu__link.side-bar_active-link {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+
+    .popup__search-form {
+        margin-left: auto;
+        position: relative;
+    }
+
+    .popup__search-button {
+        width: auto;
+        position: relative;
+        z-index: 4;
+        cursor: pointer;
+    }
+
+    .popup-contacts {
+        margin-top: auto;
+        padding-left: 1.5rem;
+    }
+
+    .popup__contact-icons {
+        margin-bottom: 1rem;
+    }
+}

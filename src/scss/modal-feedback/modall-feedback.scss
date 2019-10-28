@@ -1,0 +1,39 @@
+.side-bar__modal--feedback {
+    @include modal;
+    z-index: 5;
+}
+
+.side-bar__modal--feedback--form {
+    @include modal-form;
+}
+
+.side-bar__require-feedback {
+    @include modal-heading;
+}
+
+.side-bar__feedback-modal-input-wrapper {
+    @include modal-input-wrapper;
+}
+
+.side-bar__modal-phone {
+    @include modal-input;
+}
+
+.side-bar__feedback-data-accept-text {
+    @include modal-text;
+}
+
+.side-bar__feedback-date-accept-link {
+    @include modal-link;
+}
+
+.side-bar__modal-feedback-submit-wrapper {
+
+    .side-bar__modal-form-submit {
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    float: right;
+}

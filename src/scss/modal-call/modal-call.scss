@@ -1,0 +1,36 @@
+.side-bar__modal--call {
+    @include modal;
+  }
+
+.side-bar__close-button--style {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 2rem;
+  left: -4.5rem;
+  cursor: pointer;
+}
+  
+  .side-bar__modal--call--form {
+    @include modal-form;
+  }
+  
+  .side-bar__require-call {
+    @include modal-heading;
+  }
+  
+  .side-bar__modal-input-wrapper {
+    @include modal-input-wrapper;
+  }
+  
+  .side-bar__modal-phone {
+    @include modal-input;
+  }
+  
+  .side-bar__data-accept-text {
+    @include modal-text;
+  }
+
+  .side-bar__date-accept-link {
+    @include modal-link;
+  }

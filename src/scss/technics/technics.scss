@@ -1,0 +1,44 @@
+.technics {
+    @include serviseBlock;
+    @include border-bottom;
+    padding-bottom: 50px;
+}
+
+.technics__grid {
+    display: grid;
+    height: 200px;
+    grid-template-columns: 22.33% 22.33% 22.33% 22.33%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    padding: 0 2rem;
+    padding-top: 1.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.technics__item {
+    box-sizing: border-box;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    @include border($lightGrey);
+    background-color: #fff;
+    padding: 16px;
+    align-content: space-between;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.technics__item-text {
+    align-self: flex-start;
+    margin-bottom: auto;
+}
+
+.technics__icon {
+    align-self: flex-end;
+    height: 40px;
+}
+    

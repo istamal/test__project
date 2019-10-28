@@ -1,0 +1,92 @@
+@import 'vars';
+@import 'mixins';
+@import 'header/header';
+@import 'fonts';
+@import 'side-bar/side-bar';
+@import 'brends/brends.scss';
+@import 'technics/technics.scss';
+@import 'price/price';
+@import 'adress/adress.scss';
+@import 'footer/footer.scss';
+@import 'modal-call/modal-call.scss';
+@import 'modal-feedback/modall-feedback.scss';
+@import 'media';
+@import 'side-bar_popup/side-bar_popup.scss';
+@import 'slider/slider.scss';
+
+
+html:not(p) {
+  padding: 0;
+  margin: 0;
+}
+
+*:not(p) {
+  padding: 0;
+  margin: 0;
+}
+
+::placeholder {
+  font-size: 1rem;
+  color: $plcolor;
+  font-family: TTLakes-Regular, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: TTLakes-Regular, sans-serif;
+  color: $text;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overflow {
+  height: auto;
+}
+
+.move-down {
+  transform: scaleY(1);
+  height: auto;
+}
+
+.rotate {
+  margin-top: 2rem;
+  transform: rotate(180deg);
+  transition: transform 0.7s;
+}
+
+.content {
+  width: 75%;
+  background-color: $bgColor;
+}
+
+@media only screen and (max-width : 768px) {
+  .content {
+    width: 100%;
+  }
+}
+
+.show-modal {
+  display: block;
+}
+
+.swiper-wrapper {
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-slide {
+  padding: 1rem;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
