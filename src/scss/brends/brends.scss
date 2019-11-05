@@ -40,14 +40,48 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
     @include border($lightGrey);
 
     &:nth-child(3) .brand-item__image,
     &:nth-child(6) .brand-item__image {
         width: auto;
     }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.get-it-button {
+    border: 2px solid $pink;
+    padding: 11px 14.5px;
+    background: none;
+    border-radius: 50%;
+
+    &__image {
+        margin-bottom: -2px;
+        margin-top: -2px;
+    }
+
+    &:hover .get-it-button__image {
+        animation-name: shake;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+    }
 }
 
 .brand-item__image {
     height: auto;
+}
+
+
+@keyframes shake {
+    from {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(-10px);
+    }
 }

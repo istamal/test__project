@@ -25,9 +25,15 @@
     background-color: #fff;
     padding: 16px;
     align-content: space-between;
+    transition: transform 0.3s;
+    cursor: pointer;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
 
 }
@@ -37,7 +43,7 @@
     margin-bottom: auto;
 }
 
-.technics__icon {
+.technics-icon {
     align-self: flex-end;
     height: 40px;
 }

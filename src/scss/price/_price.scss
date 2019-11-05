@@ -41,6 +41,7 @@
     width: 18.33%;    
     padding: 23px 25px;
     color: $text;
+    vertical-align: middle;
 
     &:first-child {
         width: 45%;
@@ -65,28 +66,30 @@
     display: inline-block;
 }
 
-.price__button--style {
+.submit-button {
     background-color: $pink;
     color: white;
-    padding: 8px 12px;
+    display: inline-block;
+    padding: 0 15px;
     display: flex;
     border: none;
+    height: 32px;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 16px;
+    font-size: 12px;
     font-family: TTLakes-Medium, sans-serif;
-    vertical-align: middle;
     text-transform: uppercase;
-    text-align: right;
+    cursor: pointer;
+    outline: none;
 
-    input[type="submit"] {
-        background: none;
-        border: none;
-        color: white;
+    img {
+        margin-left: 15px;
     }
+}
 
-    span {
-        padding-left: 10px;
-        padding-right: 5px;
-    }
+.button-to-right {
+    float: right;
 }
 
 .price__menu-notice {

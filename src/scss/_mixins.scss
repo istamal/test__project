@@ -33,10 +33,6 @@
 @mixin serviseBlock {
     width: 100%;
     background-color: $bgColor;
-
-    button {
-        @include more;
-    }
 }
 
 @mixin more {
@@ -61,8 +57,10 @@
     background-color: rgba(255, 255, 255, 0.9);
     top: 0;
     left: 0;
-    display: none;
-    box-sizing: border-box;      
+    transform: scale(0);
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    z-index: 100;      
 }
 
 @mixin modal-form {

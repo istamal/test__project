@@ -33,11 +33,6 @@
         display: none;
     }
 
-    .side-bar__burger-menu {
-        background: none;
-        border: none;
-    }
-
 .side-bar__logo {
     margin-right: 25px;
 }  
@@ -46,12 +41,9 @@
     position: relative;
 }
 
-    .search-form__button {
+    .search-button {
         position: relative;
         cursor: pointer;
-    }
-
-    .search-form__button-icon {
         z-index: 2;
     }
 
@@ -89,7 +81,6 @@
         display: flex;
         align-items: baseline;
         flex-direction: column;
-
         .contacts__icons {
             margin-bottom: 1rem;
             margin-right: 20px;
@@ -135,15 +126,31 @@
     .hidden-icons {
         border-left: 1px solid $lightGrey;
         display: none;
-        padding-left: 12px;
+        padding-left: 20px;
     }
 
     .side-bar__header,
-    .side-bar__burger-menu,
     .contacts div:first-child,
     .contacts div:nth-child(2) {
         font-size: 0;
         line-height: 0;
     }
 
+}
+
+.popup-contacts:not(:first-child) {
+    margin-top: auto;
+    margin-left: 1.5rem;
+}
+
+.button {
+    background-color: $pink;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    line-height: 5px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
 }

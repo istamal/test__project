@@ -8,7 +8,9 @@
     top: 0;
     background-color: rgba(255, 255, 255, 0.8);
     height: 1024px;
-    display: none;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s; 
     z-index: 2;
 
     .popup__wrapper {
@@ -16,6 +18,7 @@
         width: 320px;
         height: 100%;
         display: flex;
+        margin-right: auto;
         flex-direction: column;
         padding-bottom: 2rem;
         box-sizing: border-box;
@@ -53,16 +56,10 @@
         position: relative;
     }
 
-    .popup__search-button {
-        width: auto;
+    .search-button {
         position: relative;
-        z-index: 4;
+        z-index: 7;
         cursor: pointer;
-    }
-
-    .popup-contacts {
-        margin-top: auto;
-        padding-left: 1.5rem;
     }
 
     .popup__contact-icons {

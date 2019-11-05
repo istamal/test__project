@@ -2,9 +2,7 @@
     @include modal;
   }
 
-.side-bar__close-button--style {
-  background: none;
-  border: none;
+.modal-close-button {
   position: absolute;
   top: 2rem;
   left: -4.5rem;
