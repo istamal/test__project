@@ -44,6 +44,6 @@
   },
   "dependencies": {
     "slick-carousel": "^1.8.1",
-    "swiper": "^5.1.0"
+    "swiper": "^6.5.1"
   }
 }
